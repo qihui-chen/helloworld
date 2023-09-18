@@ -13,6 +13,7 @@ echo [LV]device ID is:%%i
 echo [LV]turn on clock leds...
 adb -s %%i shell "echo 160 | tee /sys/class/leds/cucumber\:white\:*/brightness"
 echo --------------------------------------------------------
+pause
 )
 rem del devices.txt
 echo --------------------------------------------------------
